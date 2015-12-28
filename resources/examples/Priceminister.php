@@ -2,6 +2,11 @@
 
 require_once __DIR__.'/../../vendor/autoload.php';
 
-use PGrimaud\MarketplacesSearch\Marketplaces;
+$search = 'go pro hero 4';
 
-echo 'ici';
+$credentials = [
+    'login' => 'XXXX',
+    'password' => 'YYYY'
+];
+
+$result = new PGrimaud\MarketplacesSearch\Marketplaces\PriceministerMarketplace($search, $credentials);

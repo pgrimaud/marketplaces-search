@@ -1,3 +1,11 @@
 {
-  "name": "pgrimaud/marketplaces-search"
+  "name": "pgrimaud/marketplaces-search",
+  "autoload": {
+    "psr-4": {
+      "PGrimaud\\MarketplacesSearch\\": "src/"
+    }
+  },
+  "require": {
+    "curl/curl": "^1.3"
+  }
 }
